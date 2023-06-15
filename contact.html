@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan Cruz UX/UI Designer</title>
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,300,500"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="header-nav-container">
+      <header>
+        <p class="topnav name">jonathan cruz</p>
+      </header>
+      <nav>
+        <div class="nav">
+          <a href="index.html" class="nav-item index home">home</a>
+          <a href="gallery.html" class="nav-item gallery">gallery</a>
+          <a href="contact.html" class="nav-item contact">contact</a>
+        </div>
+      </nav>
+      <header>
+        <p class="topnav location">sf, ca</p>
+      </header>
+    </div>
+    <main>
+      <div class="top">
+        <div class="left">
+          <div>
+            <img src="./images/me.png" alt="jcruzfff" class="me" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="bio">
+            <h1 class="productdesigner">
+              <br />Hello, I have a passion <br />for UX/UI design
+            </h1>
+            <div class="summary">
+              My names Jonathan and I am based in San Francisco, California.
+              <p></p>
+              I specialize in user experiences for web applications using modern
+              design principles. I find myself able to thrive in collaborative
+              environments. With a commitment to detail, I pledge to keep
+              thinking outside of the box. Let's create something!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactme">
+        <div id="contact-icons">
+          <a
+            href="mailto:your@email.com"
+            id="center-icon"
+            class="contact-icon email"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+
+          <a href="https://twitter.com/jcruzfff" class="contact-icon twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+
+          <a href="https://t.me/jcruzfff" class="contact-icon telegram">
+            <i class="fab fa-telegram-plane"></i>
+          </a>
+
+          <a href="https://dribbble.com/jcruzfff" class="contact-icon dribbble">
+            <i class="fab fa-dribbble"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jcruzfff/"
+            class="contact-icon linkedin"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="discordapp.com/users/jcruzfff#8940"
+            class="contact-icon discord"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
+
+          <a
+            href="https://calendly.com/jcruzfff-1/30min"
+            class="contact-icon calendly"
+          >
+            <i class="fas fa-calendar-alt"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <h2>influence.</h2>
+    <footer>
+      <p class="made">vs</p>
+      <p class="date" id="currentDate"></p>
+      <p class="colors"></p>
+    </footer>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const amPm = hours < 12 ? "AM" : "PM";
+        const hours12 = hours % 12 || 12; // Convert to 12-hour format
+        const timeString = `${hours12}:${minutes}${amPm}`;
+
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      function updateDate() {
+        const now = new Date();
+        const monthNames = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        const month = monthNames[now.getMonth()];
+        const day = now.getDate();
+        const year = now.getFullYear();
+        const dateString = `${month}. ${day}, ${year}`;
+
+        document.getElementById("currentDate").textContent = dateString;
+      }
+
+      // Update the clock and date immediately
+      updateClock();
+      updateDate();
+
+      // Update the clock every minute
+      setInterval(updateClock, 60 * 1000);
+
+      // Highlight the active navigation item
+      const currentPage =
+        window.location.pathname.split("/").pop().split(".")[0] || "index";
+      document
+        .querySelector(`.nav-item.${currentPage}`)
+        .classList.add("active");
+    </script>
+  </body>
+</html>

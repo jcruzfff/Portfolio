@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan Cruz UX/UI Designer</title>
+    <link rel="stylesheet" href="./dac.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,300,500"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-nav-container">
+      <header>
+        <p class="topnav name">jonathan cruz</p>
+      </header>
+      <nav>
+        <div class="nav">
+          <a href="index.html" class="nav-item index home">home</a>
+          <a href="gallery.html" class="nav-item gallery">gallery</a>
+          <a href="contact.html" class="nav-item contact">contact</a>
+        </div>
+      </nav>
+      <header>
+        <p class="topnav location">sf, ca</p>
+      </header>
+    </div>
+    <div class="background"></div>
+    <main>
+      <div class="content">
+        <div class="firstlook">
+          <h1 class="productdesigner"><br />DAC Digital</h1>
+          <h2 class="summary">Summary</h2>
+          <p class="bio">
+            DAC.Digital is a fully integrated software and hardware development
+            shop with +8 years experience developing products for clients around
+            the globe.
+          </p>
+
+          <h2 class="approach">Approach</h2>
+          <p class="born">
+            Emphasized its strengths while introducing innovative elements to
+            foster continued growth and competitiveness. Significant part of the
+            redesign involved enhancing product design. As part of the
+            transformation refresh, I committed to customer-centric ideas and
+            set them apart in the global market while boosting internal
+            cohesion. This will position DAC.Digital for a future of sustained
+            success and innovation.
+          </p>
+        </div>
+        <div class="image-container">
+          <img
+            class="dacphones"
+            src="./images/dacphones.svg"
+            alt="dashphones"
+          />
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="role">
+        <div class="title">
+          <div class="sidetext">Role</div>
+          Web Design
+        </div>
+
+        <div class="title">
+          <div class="sidetext">Help</div>
+          Figma
+        </div>
+
+        <div class="title">
+          <div class="sidetext">Date</div>
+          May 2, 2023
+        </div>
+      </div>
+      <div class="borderbottom"></div>
+
+      <img class="longdash" src="./images/dacdash.png" alt="dac-LongDash" />
+
+      <div class="description">
+        DAC supports a wide range of technologies Medical devices to blockchain,
+        from ai and ml to computer vision and more. Flexible team structure,
+        management and pricing We are global, a DAC member is always on your
+        time zone
+      </div>
+      <img
+        class="frontpage"
+        src="./images/dacfrontpage.svg"
+        alt="dacfrontpage"
+      />
+
+      <div class="experience">
+        <div class="dacdescription">
+          <img class="dacexperience" src="./images/dacicons.png" alt="icons" />
+          DAC has a scientific approach to innovation powered by an all-star
+          team of PhD's Development. Topic modeling used to detect similarities
+          among documents for Industry 4.0. seamless Device Onboarding Procedure
+          for scalable IoT systems. Complex Event Processing Engine to detect
+          events (e.g. traffic, weather, pollution data). implementation of the
+          core components for the Farming industry platform DAC is the R&D
+          partner for leading brands, public and private organizations.
+        </div>
+
+        <div class="robot">
+          <img class="aibot" src="./images/dacrobot.png" alt="dacrobot" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="made">vs</p>
+      <p class="date" id="currentDate"></p>
+      <p class="colors"></p>
+    </footer>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const amPm = hours < 12 ? "AM" : "PM";
+        const hours12 = hours % 12 || 12; // Convert to 12-hour format
+        const timeString = `${hours12}:${minutes}${amPm}`;
+
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      function updateDate() {
+        const now = new Date();
+        const monthNames = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        const month = monthNames[now.getMonth()];
+        const day = now.getDate();
+        const year = now.getFullYear();
+        const dateString = `${month}. ${day}, ${year}`;
+
+        document.getElementById("currentDate").textContent = dateString;
+      }
+
+      // Update the clock and date immediately
+
+      updateDate();
+
+      // Update the clock every minute
+      setInterval(updateClock, 60 * 1000);
+
+      // Highlight the active navigation item
+      const currentPage =
+        window.location.pathname.split("/").pop().split(".")[0] || "index";
+      document
+        .querySelector(`.nav-item.${currentPage}`)
+        .classList.add("active");
+    </script>
+  </body>
+</html>

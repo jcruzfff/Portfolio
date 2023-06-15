@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan Cruz UX/UI Designer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,300,500"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="blue"></div>
+      <div class="lightblue"></div>
+      <div class="header">
+        <p class="topnav name">jonathan cruz</p>
+        <p class="topnav time" id="clock"></p>
+        <p class="topnav location">sf, ca</p>
+      </div>
+    </header>
+    <main>
+      <h1 class="productdesigner">Product Designer <br />at 3XP Digital</h1>
+      <div class="nav-wrapper">
+        <div class="nav">
+          <a href="index.html" class="nav-item index home">home</a>
+          <a href="gallery.html" class="nav-item gallery">gallery</a>
+          <a href="contact.html" class="nav-item contact">contact</a>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="creativity">
+        <div class="part-one">Creativity for brand awareness.</div>
+        <div class="part-two">
+          This is my <span class="journey">journey.</span>
+        </div>
+      </div>
+
+      <div class="borderbottom"></div>
+      <div class="production">projects</div>
+      <div class="selected">selcted work</div>
+
+      <div class="projects-container">
+        <div class="projects-grid">
+          <!-- DAC -->
+          <div class="project">
+            <a href="kyd.html"
+              ><img src="./images/kydgalleryimage.png" alt="KYD"
+            /></a>
+            <div class="project-info">
+              <span class="title">Know Your Developer</span>
+              <a href="kyd.html" class="button">view</a>
+            </div>
+          </div>
+          <!-- SoftServe -->
+
+          <!-- Pickem -->
+          <div class="project">
+            <a href="pickem.html"
+              ><img src="./images/pickemgalleryimage.png" alt="Pickem"
+            /></a>
+            <div class="project-info">
+              <span class="title">Pickem</span>
+              <a href="pickem.html" class="button">view</a>
+            </div>
+          </div>
+          <!-- Comm3nts -->
+          <div class="project">
+            <a href="dac.html"
+              ><img src="./images/dacgalleryimage.png" alt="DAC"
+            /></a>
+            <div class="project-info">
+              <span class="title">DAC.digital</span>
+              <a href="dac.html" class="button">view</a>
+            </div>
+          </div>
+          <div class="project">
+            <a href="softserve.html"
+              ><img src="./images/softservegalleryimage.png" alt="SoftServe"
+            /></a>
+            <div class="project-info">
+              <span class="title">SoftServe</span>
+              <a href="softserve.html" class="button">view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2>influence.</h2>
+    </main>
+
+    <footer>
+      <p class="made">vs</p>
+      <p class="date" id="currentDate"></p>
+      <p class="colors"></p>
+    </footer>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const amPm = hours < 12 ? "AM" : "PM";
+        const hours12 = hours % 12 || 12; // Convert to 12-hour format
+        const timeString = `${hours12}:${minutes}${amPm}`;
+
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      function updateDate() {
+        const now = new Date();
+        const monthNames = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        const month = monthNames[now.getMonth()];
+        const day = now.getDate();
+        const year = now.getFullYear();
+        const dateString = `${month}. ${day}, ${year}`;
+
+        document.getElementById("currentDate").textContent = dateString;
+      }
+
+      // Update the clock and date immediately
+      updateClock();
+      updateDate();
+
+      // Update the clock every minute
+      setInterval(updateClock, 60 * 1000);
+
+      // Highlight the active navigation item
+      const currentPage =
+        window.location.pathname.split("/").pop().split(".")[0] || "index";
+      document
+        .querySelector(`.nav-item.${currentPage}`)
+        .classList.add("active");
+
+      const navWrapper = document.querySelector(".nav-wrapper");
+      const nav = document.querySelector(".nav");
+      const navWrapperTop = navWrapper.offsetTop; // Store the original position of the navWrapper
+
+      window.addEventListener("scroll", () => {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > navWrapperTop) {
+          navWrapper.classList.add("sticky");
+          navWrapper.style.bottom = "auto";
+        } else {
+          navWrapper.classList.remove("sticky");
+          navWrapper.style.bottom = "50px";
+        }
+      });
+    </script>
+  </body>
+</html>

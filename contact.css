@@ -1,0 +1,649 @@
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --cod-gray: rgba(8, 8, 8, 1);
+  --cod-gray-2: rgba(9, 9, 9, 1);
+  --blue: rgba(38, 72, 250, 1);
+  --blue-2: rgba(39, 73, 251, 1);
+  --storm-dust: rgba (99, 98, 98, 1);
+  --malibu: rgba(107, 184, 255, 1);
+  --star-dust-2: rgba(156, 156, 156, 1);
+  --star-dust: rgba(159, 159, 159, 1);
+  --white: rgba(255, 255, 255, 1);
+  --font-size-xxxxS: 20px;
+  --font-size-xxxs: 20.5px;
+  --font-size-xxs: 24px;
+  --font-size-xs: 26px;
+  --font-size-s: 32px;
+  --font-size-m: 40px;
+  --font-size-l: 48px;
+  --font-family-poppins: "Poppins";
+}
+
+body {
+  background: black;
+  color: var(--star-dust-2);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: var(--font-family-poppins);
+  position: relative;
+}
+
+main {
+  width: 80%;
+  height: 1400px;
+}
+
+.header {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  font-size: 22px;
+  line-height: 20.8px;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  width: 28.5%;
+  height: 0;
+  margin: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: var(--star-dust-2);
+  justify-content: space-between;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-item {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 20px;
+}
+
+.nav-item.active {
+  color: white;
+  font-weight: 300;
+}
+
+.topnav {
+  font-size: 22px;
+}
+
+.header-nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  height: 100px;
+  width: 80%;
+  z-index: 10;
+  margin-bottom: 0px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.productdesigner {
+  width: 100%;
+  margin-top: 140px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  justify-content: flex-start;
+  color: white;
+  z-index: 1;
+  top: 0px;
+}
+
+img {
+  margin: auto;
+  left: 10%;
+  margin-top: 60px;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+  height: 100%;
+  width: auto;
+  position: relative;
+  text-align: left;
+  bottom: 24px;
+}
+
+.right,
+.left {
+  width: 50%;
+  margin-left: 24px;
+}
+
+.left {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: 24px;
+}
+
+.home {
+  cursor: pointer;
+  color: var(--star-dust-2);
+}
+
+.gallery {
+  color: var(--star-dust-2);
+  cursor: pointer;
+}
+
+.contact {
+  color: white;
+  cursor: pointer;
+}
+
+.contactme {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 275px;
+  left: 12%;
+}
+
+#contact-icons {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: auto;
+  width: 550px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-360deg);
+  bottom: 140px;
+}
+
+.contact-icon {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: solid 2px #c1c1c135;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-icon:hover {
+  transform: scale(1.3);
+}
+
+.contact-icon i {
+  font-size: 60px;
+  color: white;
+}
+
+#center-icon {
+  top: 24%;
+  left: 31%;
+  width: 240px;
+  background-color: rgb(121, 121, 121);
+  height: 240px;
+  opacity: 25%;
+  z-index: 1;
+}
+
+#center-icon:hover {
+  transform: scale(1.3);
+  opacity: 100%;
+  z-index: 2;
+}
+
+.twitter {
+  background: #1da1f2;
+  top: 43%;
+  left: 68px;
+  width: 136px;
+  height: 136px;
+  opacity: 20%;
+  z-index: 0;
+}
+
+.twitter:hover {
+  opacity: 100%;
+  z-index: 2;
+}
+
+.telegram {
+  background: #0088cc;
+  top: 5%;
+  width: 155px;
+  height: 155px;
+  left: 46%;
+  opacity: 20%;
+}
+
+.telegram:hover {
+  opacity: 100%;
+  z-index: 2;
+}
+
+.dribbble {
+  background: #ea4c89;
+  top: 8%;
+  width: 180px;
+  height: 180px;
+  left: 64px;
+  opacity: 20%;
+}
+
+.dribbble:hover {
+  opacity: 100%;
+  z-index: 2;
+}
+
+.linkedin {
+  background: #0077b5;
+  top: 28%;
+  width: 155px;
+  height: 155px;
+  right: 19px;
+  opacity: 20%;
+}
+
+.linkedin:hover {
+  opacity: 100%;
+  z-index: 2;
+}
+
+.discord {
+  background: #7289da;
+  bottom: 17%;
+  width: 110px;
+  height: 110px;
+  left: 33%;
+  opacity: 20%;
+}
+
+.discord:hover {
+  opacity: 100%;
+  z-index: 2;
+}
+
+.calendly {
+  background: #50e3c2;
+  bottom: 19%;
+  width: 132px;
+  height: 132px;
+  left: 58%;
+  opacity: 20%;
+}
+
+.calendly:hover {
+  opacity: 100%;
+  z-index: 2;
+}
+
+h2 {
+  position: absolute;
+  width: 100%;
+  height: 96px;
+  margin: auto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 96px;
+  display: flex;
+  color: #0a0a0a;
+  align-items: center;
+  text-align: center;
+  top: 1400px;
+  justify-content: center;
+}
+
+footer {
+  border-top: 1px solid var(--star-dust);
+  width: 80%;
+  height: 100px;
+  font-size: 20px;
+  margin: auto;
+  display: flex;
+  font-size: 22px;
+  line-height: 20.8px;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.colors {
+  width: 104px;
+  height: 4px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  background: linear-gradient(
+    90deg,
+    #ffffff 33.73%,
+    #2749fb 30.81%,
+    #3c6bfc 70.35%,
+    #6bb8ff 70.4%
+  );
+}
+
+/* Media query for mobile devices */
+
+@media screen and (max-width: 768px) {
+  .part-one,
+  .part-two {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1570px) {
+  .productdesigner {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .productdesigner {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .bio {
+    font-size: 12px;
+  }
+
+  .productdesigner {
+    font-size: 20px;
+  }
+
+  .right {
+    margin-left: 48px;
+  }
+
+  img {
+    width: 300px;
+    height: auto;
+    top: 50%;
+  }
+
+  .me {
+    margin-top: 140px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .header {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .production {
+    font-size: 24px;
+  }
+
+  .selected {
+    font-size: 16.5px;
+  }
+
+  img {
+    width: 200px;
+    height: auto;
+    top: 50%;
+  }
+
+  .me {
+    margin-top: 160px;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    top: 1400px;
+  }
+
+  .nav {
+    width: 30%;
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .topnav {
+    font-size: 12px;
+    margin: 0 6px;
+  }
+
+  .nav {
+    width: 30%;
+  }
+  .productdesigner {
+    text-align: center;
+    margin: auto;
+    left: 5%;
+    position: relative;
+    font-size: 20px;
+    line-height: 32px;
+    width: 137%;
+  }
+
+  .summary {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    left: 18%;
+    margin-top: 12px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .time {
+    width: 75px;
+  }
+
+  .production {
+    font-size: 18px;
+  }
+
+  .selected {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contactme {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 275px;
+    left: 12%;
+  }
+
+  #contact-icons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+    width: 360px;
+    height: 360px;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-360deg);
+    bottom: 140px;
+  }
+
+  .contact-icon:hover {
+    transform: scale(1.3);
+  }
+
+  .contact-icon i {
+    font-size: 38px;
+    color: white;
+  }
+
+  #center-icon {
+    top: 24%;
+    left: 31%;
+    width: 128px;
+    background-color: rgb(121, 121, 121);
+    height: 128px;
+    opacity: 25%;
+    z-index: 1;
+  }
+
+  #center-icon:hover {
+    transform: scale(1.3);
+    opacity: 100%;
+    z-index: 2;
+  }
+
+  .twitter {
+    background: #1da1f2;
+    top: 43%;
+    left: 68px;
+    width: 61px;
+    height: 61px;
+    opacity: 20%;
+    z-index: 0;
+  }
+
+  .telegram {
+    background: #0088cc;
+    top: 5%;
+    width: 82px;
+    height: 82px;
+    left: 48%;
+    opacity: 20%;
+  }
+
+  .dribbble {
+    background: #ea4c89;
+    top: 8%;
+    width: 105px;
+    height: 105px;
+    left: 58px;
+    opacity: 20%;
+  }
+
+  .linkedin {
+    background: #0077b5;
+    top: 24%;
+    width: 87px;
+    height: 87px;
+    right: 34px;
+    opacity: 20%;
+  }
+
+  .discord {
+    background: #7289da;
+    bottom: 24%;
+    width: 67px;
+    height: 67px;
+    left: 34%;
+    opacity: 20%;
+  }
+
+  .calendly {
+    background: #50e3c2;
+    bottom: 26%;
+    width: 78px;
+    height: 78px;
+    left: 57%;
+    opacity: 20%;
+  }
+
+  .calendly:hover {
+    opacity: 100%;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .top {
+    flex-direction: column;
+  }
+
+  .topnav {
+    font-size: 12px;
+  }
+
+  .location {
+    font-size: 0;
+  }
+  .header-nav-container {
+    margin: auto;
+    align-items: center;
+  }
+  .me {
+    margin-top: 24px;
+  }
+
+  .productdesigner {
+    text-align: center;
+    margin: auto;
+  }
+
+  .right {
+    order: 2;
+    text-align: center;
+    margin: auto;
+  }
+
+  .left {
+    order: 1;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 24px;
+  }
+}

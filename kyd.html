@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan Cruz UX/UI Designer</title>
+    <link rel="stylesheet" href="./kyd.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,300,500"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-nav-container">
+      <header>
+        <p class="topnav name">jonathan cruz</p>
+      </header>
+      <nav>
+        <div class="nav">
+          <a href="index.html" class="nav-item index home">home</a>
+          <a href="gallery.html" class="nav-item gallery">gallery</a>
+          <a href="contact.html" class="nav-item contact">contact</a>
+        </div>
+      </nav>
+      <header>
+        <p class="topnav location">sf, ca</p>
+      </header>
+    </div>
+    <div class="background"></div>
+    <main>
+      <div class="content">
+        <div class="firstlook">
+          <h1 class="productdesigner"><br />Know Your Developer</h1>
+          <h2 class="summary">Summary</h2>
+          <p class="bio">
+            KYD is a B2B and customer friendly dashboard for non-technical users
+            that helps breakdown blockchain ecosystems analytics. Providing
+            users with a more in-depth look as to what is being developed, by
+            who, and where, within each network
+          </p>
+
+          <h2 class="birth">Birth</h2>
+          <p class="born">
+            Born out of the collaborative energy of a ETH Denver, KYD emerged as
+            a revolutionary analytics company that redefines data interpretation
+            within blockchains. With a team skilled in Web3, AI, and design,
+            Know Your Developer has created an innovative, user-friendly
+            platform that not only demystifies complex data but also transforms
+            it into actionable insights. Elevate your business performance with
+            KYD, where design meets data intelligence.
+          </p>
+        </div>
+        <div class="image-container">
+          <img class="globe" src="./images/kydGlobe.png" alt="globe" />
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="role">
+        <div class="title">
+          <div class="sidetext">Role</div>
+          Co-Founder + Web Design
+        </div>
+
+        <div class="title">
+          <div class="sidetext">Help</div>
+          Figma
+        </div>
+
+        <div class="title">
+          <div class="sidetext">Date</div>
+          Feb 17, 2023
+        </div>
+      </div>
+      <div class="borderbottom"></div>
+
+      <img class="longdash" src="./images/KYD Dash.svg" alt="KYD-LongDash" />
+
+      <div class="description">
+        By focusing on simplicity and clarity, I crafted a visually engaging
+        interface that presents real-time information in an easily digestible
+        manner, empowering stakeholders to quickly identify and understand the
+        composition of development teams and their respective members.
+      </div>
+      <img class="frontpage" src="./images/kydfrontpage.svg" alt="frontpage" />
+      <div class="performance">
+        <div class="kydprofile">
+          <img
+            class="kydprofile"
+            src="./images/kydgitprofile.svg"
+            alt="kydprofile"
+          />
+        </div>
+        <div class="metrics title2">
+          Developers Performance Metrics
+          <img class="metrics-card" src="./images/kydperformance.svg" alt="" />
+          <div class="performance-description">
+            Developers serve as the backbone of the web3 ecosystem, yet,
+            notably, no analytics platforms exist to date that identify and
+            assess developers development data. The analysis of developers'
+            activity is a crucial key in understanding ecosystem growth and
+            success. We believe that transparency and data availability in the
+            blockchain industry is critical to fostering sustainable growth and
+            innovation.
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img
+        src="./images/kyd-mountains.png"
+        alt="kyd-mountains"
+        class="mountains"
+      />
+    </footer>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const amPm = hours < 12 ? "AM" : "PM";
+        const hours12 = hours % 12 || 12; // Convert to 12-hour format
+        const timeString = `${hours12}:${minutes}${amPm}`;
+
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      function updateDate() {
+        const now = new Date();
+        const monthNames = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        const month = monthNames[now.getMonth()];
+        const day = now.getDate();
+        const year = now.getFullYear();
+        const dateString = `${month}. ${day}, ${year}`;
+
+        document.getElementById("currentDate").textContent = dateString;
+      }
+
+      // Update the clock and date immediately
+      updateClock();
+      updateDate();
+
+      // Update the clock every minute
+      setInterval(updateClock, 60 * 1000);
+
+      // Highlight the active navigation item
+      const currentPage =
+        window.location.pathname.split("/").pop().split(".")[0] || "index";
+      document
+        .querySelector(`.nav-item.${currentPage}`)
+        .classList.add("active");
+    </script>
+  </body>
+</html>
