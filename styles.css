@@ -462,7 +462,7 @@ footer {
     border-radius: 50%;
     top: -104px;
     left: -56px;
-    z-index: 0;
+    z-index: 1;
   }
 
   .lightblue {
@@ -479,12 +479,13 @@ footer {
     border-radius: 50%;
     top: 123px;
     left: -35px;
-    z-index: 0;
+    z-index: 1;
   }
 
   .header {
     font-size: 12px;
     line-height: 18px;
+    z-index: 2;
   }
 
   .productdesigner {
