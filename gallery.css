@@ -440,14 +440,14 @@ footer {
   }
 
   .blue {
-    width: 274px;
-    height: 274px;
+    width: 474px;
+    height: 474px;
     z-index: 0;
   }
 
   .lightblue {
-    width: 123px;
-    height: 123px;
+    width: 273px;
+    height: 273px;
   }
 }
 
@@ -465,6 +465,16 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .blue {
+    width: 374px;
+    height: 374px;
+    z-index: 0;
+  }
+
+  .lightblue {
+    width: 173px;
+    height: 173px;
+  }
   .header {
     font-size: 12px;
     line-height: 18px;
