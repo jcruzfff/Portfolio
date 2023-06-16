@@ -401,17 +401,6 @@ footer {
     line-height: 42px;
   }
 
-  .blue {
-    width: 324px;
-    height: 224px;
-    z-index: 0;
-  }
-
-  .lightblue {
-    width: 173px;
-    height: 173px;
-  }
-
   .header {
     font-size: 16px;
     line-height: 24px;
@@ -466,6 +455,14 @@ footer {
   .productdesigner {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  .creativity {
+    width: 80%;
+  }
+  .part-one,
+  .part-two {
+    font-size: 20px;
   }
 
   .time {

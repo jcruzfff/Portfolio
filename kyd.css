@@ -405,11 +405,12 @@ img {
 
 @media screen and (max-width: 768px) {
   .header-nav-container {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
   }
-  .nav {
-    position: static;
+  .nav-item,
+  .topnav {
+    font-size: 12px;
     padding: 20px 0;
   }
 }
@@ -483,6 +484,155 @@ img {
   }
 
   footer {
-    bottom: 0;
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .image-container {
+    text-align: center;
+    order: 1;
+  }
+
+  .productdesigner {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  .globe {
+    margin-top: 0px;
+    align-items: center;
+  }
+  .summary,
+  .bio,
+  .birth,
+  .born {
+    width: 100%;
+  }
+
+  .bio,
+  .born {
+    font-size: 14px;
+    font-size: 200;
+    line-height: 24px;
+  }
+
+  .border {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .borderbottom {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .sidetext {
+    border-bottom: 1px solid var(--star-dust-2);
+    margin-right: 6px;
+    font-size: 9px;
+  }
+
+  .description {
+    width: 100%;
+    height: auto;
+    line-height: 24px;
+    font-size: 14px;
+    font-size: 200;
+    margin-top: 62px;
+    margin-bottom: 62px;
+  }
+
+  .frontpage {
+    width: 100%;
+    margin-top: 62px;
+    margin-bottom: 62px;
+  }
+
+  .performance {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .kydprofile {
+    margin: auto;
+    margin-bottom: 24px;
+  }
+
+  .metrics-card {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+  }
+
+  .performance-description {
+    width: 100%;
+    height: auto;
+    line-height: 24px;
+    font-size: 14px;
+    font-size: 200;
+    margin-top: 24px;
+    margin-bottom: 62px;
+  }
+  .header {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .nav {
+    width: 30%;
+  }
+  .top {
+    flex-direction: column;
+  }
+
+  .topnav {
+    font-size: 12px;
+    margin: 0 6px;
+  }
+
+  .title2 {
+    font-size: 18px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin-bottom: 48px;
+  }
+
+  .location {
+    font-size: 0;
+  }
+  .header-nav-container {
+    margin: auto;
+    align-items: center;
+  }
+  .firstlook {
+    margin-top: 70px;
+    order: 2;
+    text-align: center;
+    margin: auto;
+  }
+
+  footer {
+    bottom: 0px;
   }
 }
