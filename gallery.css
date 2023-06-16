@@ -106,7 +106,7 @@ main {
   color: white;
   z-index: 1;
   top: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 .puzzle {
@@ -119,6 +119,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  rotate: 90deg;
 }
 
 .nav-wrapper {
@@ -468,11 +469,35 @@ footer {
   .blue {
     width: 374px;
     height: 374px;
+    background: linear-gradient(
+      180deg,
+      #2749fb 175.94%,
+      rgba(0, 0, 0, 0) 194.39%
+    );
+    filter: blur(200px);
+    transform: matrix(0, 1, 1, 0, 0, 0);
+    position: absolute;
+    border-radius: 50%;
+    top: -104px;
+    left: -56px;
+    z-index: 0;
   }
 
   .lightblue {
     width: 173px;
     height: 173px;
+    background: linear-gradient(
+      180deg,
+      #6bb8ff 95.92%,
+      rgba(255, 255, 255, 0) 221.79%
+    );
+    filter: blur(100px);
+    transform: matrix(0, 1, 1, 0, 0, 0);
+    position: absolute;
+    border-radius: 50%;
+    top: 123px;
+    left: -35px;
+    z-index: 0;
   }
   .header {
     font-size: 12px;
@@ -483,7 +508,7 @@ footer {
     font-size: 24px;
     line-height: 32px;
     top: 0px;
-    margin-bottom: 12px;
+    margin-bottom: 32px;
   }
   .puzzle {
     margin-top: 12px;
