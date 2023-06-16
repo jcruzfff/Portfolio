@@ -507,8 +507,8 @@ footer {
   .productdesigner {
     font-size: 24px;
     line-height: 32px;
-    top: 0px;
-    margin-bottom: 32px;
+    top: 16px;
+    margin-bottom: 24px;
   }
   .puzzle {
     margin-top: 12px;
