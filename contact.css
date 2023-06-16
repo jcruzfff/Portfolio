@@ -506,7 +506,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 275px;
-    left: 12%;
+    left: 7%;
   }
 
   #contact-icons {
@@ -615,6 +615,10 @@ footer {
 
   .topnav {
     font-size: 12px;
+  }
+
+  .nav {
+    width: 40%;
   }
 
   .location {

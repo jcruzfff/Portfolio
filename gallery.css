@@ -96,7 +96,7 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
-  line-height: 72px;
+  line-height: 54px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +106,7 @@ main {
   color: white;
   z-index: 1;
   top: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 72px;
 }
 
 .puzzle {
@@ -498,6 +498,10 @@ footer {
     top: 123px;
     left: -35px;
     z-index: 0;
+  }
+
+  .nav {
+    width: 40%;
   }
   .header {
     font-size: 12px;

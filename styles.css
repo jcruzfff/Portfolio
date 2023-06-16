@@ -482,6 +482,10 @@ footer {
     z-index: 0;
   }
 
+  .nav {
+    width: 40%;
+  }
+
   .header {
     font-size: 12px;
     line-height: 18px;
