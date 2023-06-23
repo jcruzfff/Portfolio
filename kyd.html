@@ -112,56 +112,5 @@
         class="mountains"
       />
     </footer>
-
-    <script>
-      function updateClock() {
-        const now = new Date();
-        const hours = now.getHours();
-        const minutes = String(now.getMinutes()).padStart(2, "0");
-        const amPm = hours < 12 ? "AM" : "PM";
-        const hours12 = hours % 12 || 12; // Convert to 12-hour format
-        const timeString = `${hours12}:${minutes}${amPm}`;
-
-        document.getElementById("clock").textContent = timeString;
-      }
-
-      function updateDate() {
-        const now = new Date();
-        const monthNames = [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
-        ];
-        const month = monthNames[now.getMonth()];
-        const day = now.getDate();
-        const year = now.getFullYear();
-        const dateString = `${month}. ${day}, ${year}`;
-
-        document.getElementById("currentDate").textContent = dateString;
-      }
-
-      // Update the clock and date immediately
-      updateClock();
-      updateDate();
-
-      // Update the clock every minute
-      setInterval(updateClock, 60 * 1000);
-
-      // Highlight the active navigation item
-      const currentPage =
-        window.location.pathname.split("/").pop().split(".")[0] || "index";
-      document
-        .querySelector(`.nav-item.${currentPage}`)
-        .classList.add("active");
-    </script>
   </body>
 </html>
