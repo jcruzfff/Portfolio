@@ -597,9 +597,6 @@ footer {
     font-size: 0;
   }
   .header-nav-container {
-    display: flex;
-    flex-direction: row;
-    height: auto;
     margin: auto;
     align-items: center;
   }
