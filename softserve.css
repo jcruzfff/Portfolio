@@ -570,21 +570,25 @@ footer {
     width: 30%;
   }
   .top {
-    flex-direction: ro;
+    flex-direction: column;
   }
 
   .topnav {
     font-size: 12px;
     margin: 0 6px;
-    flex-direction: row;
   }
 
-  .nav-item,
-  .topnav {
+  .nav-item {
     font-size: 12px;
-    padding: 20px 0;
   }
 
+  .location {
+    font-size: 0;
+  }
+  .header-nav-container {
+    margin: auto;
+    align-items: center;
+  }
   .title2 {
     font-size: 18px;
     margin: auto;
