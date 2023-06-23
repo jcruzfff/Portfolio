@@ -578,16 +578,17 @@ footer {
     margin: 0 6px;
   }
 
-  .nav-item {
-    font-size: 12px;
-  }
-
   .location {
     font-size: 0;
   }
   .header-nav-container {
-    margin: auto;
-    align-items: center;
+    flex-direction: row;
+    height: auto;
+  }
+  .nav-item,
+  .topnav {
+    font-size: 12px;
+    padding: 20px 0;
   }
   .title2 {
     font-size: 18px;
