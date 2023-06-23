@@ -570,12 +570,13 @@ footer {
     width: 30%;
   }
   .top {
-    flex-direction: column;
+    flex-direction: ro;
   }
 
   .topnav {
     font-size: 12px;
     margin: 0 6px;
+    flex-direction: row;
   }
 
   .nav-item,
