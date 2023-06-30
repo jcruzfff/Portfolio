@@ -90,6 +90,13 @@ main {
   text-align: center;
 }
 
+.card {
+  display: flex;
+  height: 100px;
+  width: 200px;
+  background-color: #202020;
+}
+
 .productdesigner {
   width: 80%;
   margin: auto;
@@ -98,14 +105,14 @@ main {
   font-size: 48px;
   line-height: 72px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   position: relative;
   text-align: right;
   justify-content: flex-end;
   color: white;
   z-index: 1;
-  top: 220px;
+  top: 30vh;
 }
 
 .border {

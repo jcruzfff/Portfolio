@@ -484,6 +484,9 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  main {
+    height: 2800px;
+  }
   .content {
     flex-direction: column;
     align-items: center;
@@ -491,6 +494,7 @@ footer {
   }
 
   .image-container {
+    margin-top: 48px;
     text-align: center;
     order: 1;
   }
@@ -499,14 +503,11 @@ footer {
     margin: auto;
     align-items: center;
     display: flex;
+    margin-top: 48px;
     font-size: 32px;
     margin-bottom: 18px;
   }
 
-  .globe {
-    margin-top: 0px;
-    align-items: center;
-  }
   .summary,
   .bio,
   .born,
@@ -551,14 +552,15 @@ footer {
     line-height: 24px;
     font-size: 14px;
     font-size: 200;
-    margin-top: 62px;
-    margin-bottom: 62px;
+    margin-top: 48px;
+    margin-bottom: 48px;
   }
 
   .frontpage {
     width: 100%;
-    margin-top: 62px;
-    margin-bottom: 62px;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .header {
@@ -601,6 +603,16 @@ footer {
   .location {
     font-size: 0;
   }
+
+  .design {
+    margin-top: 48px;
+    margin-bottom: 0px;
+  }
+
+  .ssculture {
+    width: 100%;
+    height: auto;
+  }
   .header-nav-container {
     margin: auto;
     align-items: center;
@@ -614,5 +626,6 @@ footer {
 
   footer {
     bottom: 0px;
+    font-size: 12px;
   }
 }
