@@ -90,13 +90,6 @@ main {
   text-align: center;
 }
 
-.card {
-  display: flex;
-  height: 100px;
-  width: 200px;
-  background-color: #202020;
-}
-
 .productdesigner {
   width: 80%;
   margin: auto;

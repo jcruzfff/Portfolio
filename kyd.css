@@ -455,7 +455,7 @@ img {
 
 @media screen and (max-width: 975px) {
   .productdesigner {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
@@ -504,7 +504,7 @@ img {
     margin: auto;
     align-items: center;
     display: flex;
-    font-size: px;
+    font-size: 24px;
     margin-bottom: 18px;
   }
 

@@ -399,11 +399,12 @@ footer {
 
 @media screen and (max-width: 768px) {
   .header-nav-container {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
   }
-  .nav {
-    position: static;
+  .nav-item,
+  .topnav {
+    font-size: 12px;
     padding: 20px 0;
   }
 }
@@ -500,7 +501,9 @@ footer {
     margin: auto;
   }
 
-  .image-container {
+  .dacphones {
+    width: 100%;
+    height: auto;
     text-align: center;
     order: 1;
   }
@@ -513,10 +516,6 @@ footer {
     margin-bottom: 18px;
   }
 
-  .globe {
-    margin-top: 0px;
-    align-items: center;
-  }
   .summary,
   .bio,
   .approach,

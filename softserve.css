@@ -404,8 +404,9 @@ footer {
     flex-direction: row;
     height: auto;
   }
-  .nav {
-    position: static;
+  .nav-item,
+  .topnav {
+    font-size: 12px;
     padding: 20px 0;
   }
 }
