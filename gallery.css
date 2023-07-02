@@ -91,35 +91,63 @@ main {
 }
 
 .productdesigner {
-  width: 80%;
+  width: 100%;
   margin: auto;
   font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 54px;
+  font-weight: 700;
   display: flex;
+  top: 74px;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: flex-start;
   color: white;
   z-index: 1;
-  top: 24px;
-  margin-bottom: 72px;
 }
 
-.puzzle {
-  width: 25%;
-  height: auto;
-  margin: auto;
+.welcomeborder {
   position: relative;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
+
+  width: 66%;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 24px;
+  border: 1px solid #ffffff;
+}
+
+.together {
+  position: relative;
+  margin-top: 0;
+  font-weight: 200;
+  font-size: 24px;
+  color: white;
+}
+
+.main-container {
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 80%;
+  top: 150px;
+}
+
+.text-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 36px;
+}
+
+.imgcontainer {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  rotate: 90deg;
 }
 
 .nav-wrapper {
@@ -191,7 +219,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  top: 300px;
+  top: 450px;
   font-size: 32px;
   color: white;
   font-style: normal;
@@ -215,7 +243,7 @@ main {
 .projects-container {
   width: 80%;
   margin: auto;
-  top: 380px;
+  top: 520px;
   position: relative;
   align-items: center;
   color: white;

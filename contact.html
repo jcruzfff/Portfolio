@@ -15,21 +15,15 @@
     />
   </head>
   <body>
-    <div class="header-nav-container">
-      <header>
+    <header>
+      <div class="blue"></div>
+      <div class="lightblue"></div>
+      <div class="header">
         <p class="topnav name">jonathan cruz</p>
-      </header>
-      <nav>
-        <div class="nav">
-          <a href="index.html" class="nav-item index home">home</a>
-          <a href="gallery.html" class="nav-item gallery">gallery</a>
-          <a href="contact.html" class="nav-item contact">contact</a>
-        </div>
-      </nav>
-      <header>
+        <p class="topnav time" id="clock"></p>
         <p class="topnav location">sf, ca</p>
-      </header>
-    </div>
+      </div>
+    </header>
     <main>
       <div class="top">
         <div class="left">
@@ -39,18 +33,48 @@
         </div>
         <div class="right">
           <div class="bio">
-            <h1 class="productdesigner">
-              <br />Hello, I have a passion <br />for UX/UI design
-            </h1>
+            <div class="HelloIMJonathan">
+              <span
+                style="
+                  color: white;
+                  font-size: 64px;
+                  font-family: Poppins;
+                  font-weight: 600;
+                  line-height: 73.28px;
+                  word-wrap: break-word;
+                "
+                >Hello, <br /></span
+              ><span
+                style="
+                  color: #2f4dae;
+                  font-size: 64px;
+                  font-family: Poppins;
+                  font-weight: 600;
+                  line-height: 73.28px;
+                  word-wrap: break-word;
+                "
+                >I’m Jonathan</span
+              >
+            </div>
+
+            <p class="border"></p>
             <div class="summary">
-              My names Jonathan and I am based in San Francisco, California.
+              I specialize in user experiences for web applications. Often find
+              myself able to thrive in collaborative environments. With a
+              commitment to detail, I pledge to keep thinking outside of the
+              box.
               <p></p>
-              I specialize in user experiences for web applications using modern
-              design principles. I find myself able to thrive in collaborative
-              environments. With a commitment to detail, I pledge to keep
-              thinking outside of the box. Let's create something!
+              Let’s create something!
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="nav-wrapper">
+        <div class="nav">
+          <a href="index.html" class="nav-item index home">home</a>
+          <a href="gallery.html" class="nav-item gallery">gallery</a>
+          <a href="contact.html" class="nav-item contact">contact</a>
         </div>
       </div>
 
@@ -100,7 +124,6 @@
       </div>
     </main>
 
-    <h2>influence.</h2>
     <footer>
       <p class="made">vs</p>
       <p class="date" id="currentDate"></p>
@@ -156,6 +179,23 @@
       document
         .querySelector(`.nav-item.${currentPage}`)
         .classList.add("active");
+
+      const navWrapper = document.querySelector(".nav-wrapper");
+      const nav = document.querySelector(".nav");
+      const navWrapperTop = navWrapper.offsetTop; // Store the original position of the navWrapper
+
+      window.addEventListener("scroll", () => {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > navWrapperTop) {
+          navWrapper.classList.add("sticky");
+          navWrapper.style.bottom = "auto";
+        } else {
+          navWrapper.classList.remove("sticky");
+          navWrapper.style.bottom = "50px";
+        }
+      });
     </script>
   </body>
 </html>
