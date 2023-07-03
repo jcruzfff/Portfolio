@@ -39,8 +39,10 @@
       </div>
       <div class="border"></div>
       <div class="creativity">
-        <div class="part-one">Creativity for brand awareness.</div>
-        <div class="part-two">
+        <div id="part-one" class="part-one">
+          Creativity for brand awareness.
+        </div>
+        <div id="part-two" class="part-two">
           This is my <span class="journey">journey.</span>
         </div>
       </div>
@@ -168,6 +170,37 @@
           navWrapper.style.bottom = "50px";
         }
       });
+
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.target.id === "part-one") {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-from-left");
+            } else {
+              entry.target.classList.remove("animate-from-left");
+            }
+          } else if (entry.target.id === "part-two") {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-from-right");
+            } else {
+              entry.target.classList.remove("animate-from-right");
+            }
+          }
+        });
+      }
+
+      const observer = new IntersectionObserver(handleIntersection, {
+        threshold: [0, 1],
+      });
+
+      window.addEventListener("scroll", () => {
+        lastScrollY = window.pageYOffset;
+      });
+
+      const partOne = document.querySelector("#part-one");
+      const partTwo = document.querySelector("#part-two");
+      observer.observe(partOne);
+      observer.observe(partTwo);
     </script>
   </body>
 </html>

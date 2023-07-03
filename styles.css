@@ -76,6 +76,7 @@ main {
   z-index: 1;
   color: white;
   word-wrap: break-word;
+  animation: 0.5s ease-in-out 0s 1 slideInFromLeft;
 }
 .subhead {
   color: #2f4dae;
@@ -106,9 +107,11 @@ main {
 
 .tailor {
   color: white;
+  animation: 0.5s ease-in-out 0s 1 slideInFromLeft;
 }
 .provide {
   text-align: right;
+  animation: 1s ease-in-out 0s 1 slideInFromRight;
 }
 .border {
   position: relative;
@@ -141,10 +144,22 @@ main {
 
 .part-one {
   color: var(--star-dust-2);
+  opacity: 0;
 }
 
 .part-two {
   color: var(--star-dust-2);
+  opacity: 0;
+}
+
+.animate-from-left {
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  opacity: 1;
+}
+
+.animate-from-right {
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
+  opacity: 1;
 }
 
 .journey {
@@ -373,6 +388,25 @@ footer {
   display: inline;
   align-items: center;
   text-align: center;
+}
+
+/* Animations time frames */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* Media query for mobile devices */
