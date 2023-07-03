@@ -30,7 +30,6 @@ body {
 }
 
 main {
-  width: 80%;
   height: 1800px;
 }
 
@@ -74,12 +73,22 @@ main {
   margin: auto;
   display: flex;
   font-size: 22px;
+  font-weight: 200;
   line-height: 20.8px;
   justify-content: space-between;
   align-items: center;
   top: 0;
   position: relative;
   z-index: 1;
+}
+
+.time {
+  width: 185px;
+  margin: auto;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .nav-wrapper {
@@ -145,15 +154,31 @@ main {
 }
 
 .top {
+  width: 80%;
   display: flex;
   flex-direction: row;
+  margin: auto;
   margin-top: 110px;
 }
 
 .border {
+  width: 72%;
+  height: auto;
   border: solid 1px white;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+
+.HelloIMJonathan {
+  color: white;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 73.28px;
+  word-wrap: break-word;
+}
+
+.name1 {
+  color: #2f4dae;
 }
 
 .right,
@@ -161,13 +186,14 @@ main {
   display: flex;
   flex-direction: row;
   width: 50%;
+  height: auto;
   margin-left: 24px;
 }
 
 .left {
   width: 100%;
   height: auto;
-  margin-left: 142px;
+  margin-left: 32px;
 }
 
 .right {
@@ -204,7 +230,6 @@ main {
   align-items: center;
   justify-content: center;
   margin-top: 575px;
-  left: 12%;
 }
 
 #contact-icons {
@@ -348,7 +373,7 @@ h2 {
   width: 100%;
   height: 96px;
   margin: auto;
-  font-size: 64px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: 96px;
@@ -356,7 +381,7 @@ h2 {
   color: #0a0a0a;
   align-items: center;
   text-align: center;
-  top: 1400px;
+  top: 1300px;
   justify-content: center;
 }
 
@@ -392,91 +417,20 @@ footer {
 }
 
 /* Media query for mobile devices */
-
-@media screen and (max-width: 768px) {
-  .part-one,
-  .part-two {
-    font-size: 24px;
-    line-height: 30px;
-  }
-}
-
-@media screen and (max-width: 1570px) {
-  .productdesigner {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  .productdesigner {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .bio {
-    font-size: 12px;
-  }
-
-  .productdesigner {
-    font-size: 20px;
-  }
-
-  .right {
-    margin-left: 48px;
-  }
-
-  img {
-    width: 300px;
-    height: auto;
-    top: 50%;
-  }
-
-  .me {
-    margin-top: 140px;
-  }
-}
-
 @media screen and (max-width: 990px) {
   .header {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .production {
-    font-size: 24px;
-  }
-
-  .selected {
-    font-size: 16.5px;
-  }
-
   img {
-    width: 200px;
+    width: 100%;
     height: auto;
-    top: 50%;
-  }
-
-  .me {
-    margin-top: 160px;
-  }
-
-  h2 {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 300;
-    top: 1400px;
   }
 
   .nav {
     width: 30%;
     font-size: 12px;
-  }
-
-  .title {
-    font-size: 18px;
   }
 
   footer {
@@ -485,62 +439,92 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  .header {
-    font-size: 12px;
-    line-height: 18px;
+  .top {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+
+  main {
+    height: 1400px;
   }
 
   .topnav {
     font-size: 12px;
-    margin: 0 6px;
   }
 
-  .nav {
-    width: 30%;
-  }
-  .productdesigner {
-    text-align: center;
-    margin: auto;
-    left: 5%;
+  .right,
+  .left {
     position: relative;
-    font-size: 20px;
-    line-height: 32px;
-    width: 137%;
-  }
-
-  .summary {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    position: relative;
-    left: 18%;
-    margin-top: 12px;
-    justify-content: center;
-    text-align: center;
+    width: 100%;
+    height: auto;
+    align-items: center;
   }
 
   .time {
     width: 75px;
   }
-
-  .production {
-    font-size: 18px;
+  .nav {
+    width: 40%;
   }
 
-  .selected {
-    font-size: 12px;
+  .location {
+    font-size: 12;
   }
-}
+  .header-nav-container {
+    margin: auto;
+    align-items: center;
+  }
 
-@media screen and (max-width: 450px) {
-  .contactme {
+  .HelloIMJonathan {
     display: flex;
-    position: relative;
+    width: 100%;
     flex-direction: column;
     margin: auto;
     align-items: center;
     justify-content: center;
-    margin-top: 275px;
-    left: 7%;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42.28px;
+    word-wrap: break-word;
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+
+  .border {
+    width: 80%;
+    margin: auto;
+  }
+
+  .summary {
+    width: 80%;
+    height: auto;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+    margin-top: 24px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contactme {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 375px;
+    left: 0%;
   }
 
   #contact-icons {
@@ -571,7 +555,7 @@ footer {
     width: 128px;
     background-color: rgb(121, 121, 121);
     height: 128px;
-    opacity: 25%;
+    opacity: 100%;
     z-index: 1;
   }
 
@@ -587,7 +571,7 @@ footer {
     left: 68px;
     width: 61px;
     height: 61px;
-    opacity: 20%;
+    opacity: 100%;
     z-index: 0;
   }
 
@@ -597,7 +581,7 @@ footer {
     width: 82px;
     height: 82px;
     left: 48%;
-    opacity: 20%;
+    opacity: 100%;
   }
 
   .dribbble {
@@ -606,7 +590,7 @@ footer {
     width: 105px;
     height: 105px;
     left: 58px;
-    opacity: 20%;
+    opacity: 100%;
   }
 
   .linkedin {
@@ -615,7 +599,7 @@ footer {
     width: 87px;
     height: 87px;
     right: 34px;
-    opacity: 20%;
+    opacity: 100%;
   }
 
   .discord {
@@ -624,7 +608,7 @@ footer {
     width: 67px;
     height: 67px;
     left: 34%;
-    opacity: 20%;
+    opacity: 100%;
   }
 
   .calendly {
@@ -633,55 +617,11 @@ footer {
     width: 78px;
     height: 78px;
     left: 57%;
-    opacity: 20%;
+    opacity: 100%;
   }
 
   .calendly:hover {
     opacity: 100%;
     z-index: 2;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .top {
-    flex-direction: column;
-  }
-
-  .topnav {
-    font-size: 12px;
-  }
-
-  .nav {
-    width: 40%;
-  }
-
-  .location {
-    font-size: 0;
-  }
-  .header-nav-container {
-    margin: auto;
-    align-items: center;
-  }
-  .me {
-    margin-top: 24px;
-  }
-
-  .productdesigner {
-    text-align: center;
-    margin: auto;
-  }
-
-  .right {
-    order: 2;
-    text-align: center;
-    margin: auto;
-  }
-
-  .left {
-    order: 1;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-top: 24px;
   }
 }
