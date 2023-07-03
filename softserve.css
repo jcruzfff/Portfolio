@@ -31,7 +31,7 @@ body {
 }
 
 main {
-  height: 3200px;
+  height: 3300px;
   width: 80%;
   margin: auto;
 }
@@ -359,6 +359,7 @@ img {
 footer {
   border-top: 1px solid var(--star-dust);
   width: 80%;
+  margin-top: 48px;
   height: 100px;
   font-size: 20px;
   margin: auto;
