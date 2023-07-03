@@ -542,8 +542,8 @@ footer {
     font-weight: 600;
     line-height: 42.28px;
     word-wrap: break-word;
-    margin-bottom: 24px;
-    margin-top: 24px;
+    margin-bottom: 12px;
+    margin-top: 12px;
   }
 
   .border {
@@ -557,7 +557,7 @@ footer {
     font-size: 12px;
     text-align: center;
     margin: auto;
-    margin-top: 24px;
+    margin-top: 12px;
     position: relative;
     justify-content: center;
     text-align: center;
