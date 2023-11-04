@@ -614,7 +614,7 @@ footer {
     white-space: nowrap;
     color: #323232;
     font-size: 12px;
-    margin-top: 80px;
+    margin-top: 0px;
   }
 
   .hero-border {
@@ -714,7 +714,7 @@ footer {
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 12px;
-    margin-top: 48px;
+    margin-top: 82px;
     text-decoration: none;
     font-family: var(--font-family-poppins);
     font-weight: 500;
