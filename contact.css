@@ -466,8 +466,8 @@ footer {
     flex-direction: row;
     position: relative;
     margin: auto;
-    width: 420px;
-    height: 420px;
+    width: 360px;
+    height: 360px;
     justify-content: center;
     align-items: center;
     transform: rotate(-360deg);
@@ -501,8 +501,8 @@ footer {
 
   .twitter {
     background: #ffffff09;
-    top: 36.5%;
-    left: 70px;
+    top: 40.5%;
+    left: 60px;
     width: 70px;
     height: 70px;
     opacity: 100%;
@@ -516,10 +516,10 @@ footer {
 
   .telegram {
     background: #ffffff09;
-    top: 8%;
+    top: 5%;
     width: 82px;
     height: 82px;
-    left: 46%;
+    left: 48%;
     opacity: 100%;
   }
   #telegram {
@@ -532,7 +532,7 @@ footer {
     top: 8%;
     width: 105px;
     height: 105px;
-    left: 71px;
+    left: 58px;
     opacity: 100%;
   }
   #dribbble {
@@ -542,10 +542,10 @@ footer {
 
   .linkedin {
     background: #ffffff09;
-    top: 26%;
+    top: 25%;
     width: 86px;
     height: 86px;
-    right: 79px;
+    right: 39px;
     opacity: 100%;
   }
 
@@ -556,10 +556,10 @@ footer {
 
   .discord {
     background: #ffffff09;
-    bottom: 31%;
+    bottom: 24%;
     width: 67px;
     height: 67px;
-    left: 31%;
+    left: 34%;
     opacity: 100%;
   }
 
@@ -570,10 +570,10 @@ footer {
 
   .calendly {
     background: #ffffff09;
-    bottom: 32%;
+    bottom: 26%;
     width: 78px;
     height: 78px;
-    left: 51%;
+    left: 57%;
     opacity: 100%;
   }
   #calendly {
