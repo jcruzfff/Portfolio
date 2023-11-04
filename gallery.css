@@ -316,6 +316,16 @@ h2 {
   top: 2500px;
   justify-content: center;
 }
+img.jutsuthumbnail,
+img.mintgolddustthumbnail,
+img.deepaithumbnail,
+img.ponthumbnail,
+img.graphidthumbnail,
+img.sleepnthumbnail,
+img.chatroomthumbnail,
+img.mejorathumbnail {
+  opacity: 40%;
+}
 
 footer {
   border-top: 1px solid var(--star-dust);
@@ -527,6 +537,16 @@ footer {
     color: white;
     font-style: normal;
     font-weight: var(--font-size-m);
+  }
+  img.jutsuthumbnail,
+  img.mintgolddustthumbnail,
+  img.deepaithumbnail,
+  img.ponthumbnail,
+  img.graphidthumbnail,
+  img.sleepnthumbnail,
+  img.chatroomthumbnail,
+  img.mejorathumbnail {
+    opacity: 40%;
   }
 
   .projects-container {

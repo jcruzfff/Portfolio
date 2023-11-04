@@ -691,6 +691,18 @@ footer {
     font-size: 20px;
   }
 
+  .mintgolddust,
+  .jutsu,
+  .deepai {
+    color: gray;
+  }
+
+  img.jutsuthumbnail,
+  img.mintgolddustthumbnail,
+  img.deepaithumbnail {
+    opacity: 40%;
+  }
+
   .button-gallery {
     display: flex;
     flex-direction: row;
