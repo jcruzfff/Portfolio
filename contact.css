@@ -30,41 +30,7 @@ body {
 }
 
 main {
-  height: 1800px;
-}
-
-.blue {
-  width: 474px;
-  height: 474px;
-  background: linear-gradient(
-    180deg,
-    #2749fb 175.94%,
-    rgba(0, 0, 0, 0) 194.39%
-  );
-  filter: blur(200px);
-  transform: matrix(0, 1, 1, 0, 0, 0);
-  position: absolute;
-  border-radius: 50%;
-  top: -104px;
-  left: -56px;
-  z-index: 0;
-}
-
-.lightblue {
-  width: 273px;
-  height: 273px;
-  background: linear-gradient(
-    180deg,
-    #6bb8ff 95.92%,
-    rgba(255, 255, 255, 0) 221.79%
-  );
-  filter: blur(100px);
-  transform: matrix(0, 1, 1, 0, 0, 0);
-  position: absolute;
-  border-radius: 50%;
-  top: 123px;
-  left: -35px;
-  z-index: 0;
+  height: 1200px;
 }
 
 .header {
@@ -169,57 +135,6 @@ main {
   margin-bottom: 24px;
 }
 
-.HelloIMJonathan {
-  color: white;
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 73.28px;
-  word-wrap: break-word;
-}
-
-.name1 {
-  color: #2f4dae;
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.right,
-.left {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  height: auto;
-  margin-left: 24px;
-}
-
-.left {
-  width: 100%;
-  height: auto;
-  margin-left: 80px;
-  animation: 0.8s ease-out 0s 1 slideInFromLeft;
-}
-
-.right {
-  margin-top: 110px;
-  animation: 1.5s ease-out 0s 1 slideInFromRight;
-}
-
 .home {
   cursor: pointer;
   color: var(--star-dust-2);
@@ -234,13 +149,6 @@ main {
   color: white;
   cursor: pointer;
 }
-.summary {
-  font-size: 24px;
-  font-weight: 100;
-  width: 620px;
-  height: auto;
-  color: white;
-}
 
 .contactme {
   display: flex;
@@ -249,7 +157,8 @@ main {
   margin: auto;
   align-items: center;
   justify-content: center;
-  margin-top: 225px;
+  margin-top: 166px;
+  margin-right: 48px;
 }
 
 #contact-icons {
@@ -420,10 +329,10 @@ h2 {
   font-size: 96px;
   font-style: normal;
   font-weight: 500;
-  margin-top: 330px;
+  margin-top: 100px;
   line-height: 96px;
   display: flex;
-  color: #0a0a0a;
+  color: #17181ac4;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -494,25 +403,11 @@ footer {
   }
 
   main {
-    height: 1400px;
+    height: 800px;
   }
 
   .topnav {
     font-size: 12px;
-  }
-
-  .right,
-  .left {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    align-items: center;
-  }
-  .right {
-    animation: 1s ease-out 0s 1 slideInFromRight;
   }
 
   .time {
@@ -530,37 +425,9 @@ footer {
     align-items: center;
   }
 
-  .HelloIMJonathan {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 42.28px;
-    word-wrap: break-word;
-    margin-bottom: 12px;
-    margin-top: 12px;
-  }
-
   .border {
     width: 80%;
     margin: auto;
-  }
-
-  .summary {
-    width: 80%;
-    height: auto;
-    font-size: 12px;
-    text-align: center;
-    margin: auto;
-    margin-top: 12px;
-    position: relative;
-    justify-content: center;
-    text-align: center;
   }
 
   .contactme {
@@ -570,14 +437,14 @@ footer {
     margin: auto;
     align-items: center;
     justify-content: center;
-    margin-top: 175px;
+    margin-top: 155px;
     left: 0%;
   }
 
   h2 {
     color: #1c1c1c;
     font-size: 48px;
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   #contact-icons {
