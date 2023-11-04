@@ -94,18 +94,6 @@ span.workspace {
   border: 1px #4d6ac8 solid;
 }
 
-.hero-images {
-  position: absolute;
-  text-align: left;
-}
-
-.background-me {
-  width: 670px;
-  height: auto;
-  padding-left: 83px;
-  text-align: left;
-}
-
 .avatar {
   position: absolute;
   left: 132px;
@@ -118,14 +106,6 @@ span.workspace {
   top: 100px;
   text-align: right;
   right: 358px;
-}
-
-.sidebar {
-  animation: 0.75s ease-in-out 0s 1 slideInFromLeft;
-}
-
-.titles {
-  animation: 0.75s ease-in-out 0s 1 slideInFromRight;
 }
 
 .bold-name {
@@ -151,12 +131,6 @@ span.workspace {
   white-space: nowrap;
 }
 
-.imgcontainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .nav-wrapper {
   display: flex;
   width: 100%;
@@ -166,6 +140,14 @@ span.workspace {
 
   justify-content: center;
   transition: all 0.3s ease; /* Added smooth transition */
+}
+
+.sidebar {
+  animation: 0.75s ease-in-out 0s 1 slideInFromLeft;
+}
+
+.titles {
+  animation: 0.75s ease-in-out 0s 1 slideInFromRight;
 }
 
 .nav {
@@ -226,6 +208,7 @@ span.workspace {
   position: relative;
   width: 80%;
   margin: auto;
+  margin-top: 950px;
   font-size: 32px;
   color: white;
   font-style: normal;
