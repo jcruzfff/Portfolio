@@ -438,7 +438,8 @@ footer {
     flex-direction: column;
     left: 0px;
     gap: 192px;
-    margin-bottom: 12px;
+    margin-top: 0px;
+
     align-items: center;
   }
 
