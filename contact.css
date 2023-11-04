@@ -403,7 +403,7 @@ footer {
   }
 
   main {
-    height: 800px;
+    height: 700px;
   }
 
   .topnav {
@@ -444,7 +444,7 @@ footer {
   h2 {
     color: #1c1c1c;
     font-size: 48px;
-    margin-top: 60px;
+    margin-top: 36px;
   }
 
   #contact-icons {
