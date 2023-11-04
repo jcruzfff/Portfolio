@@ -213,6 +213,16 @@ main {
   opacity: 0;
 }
 
+.animate-from-left {
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+  opacity: 1;
+}
+
+.animate-from-right {
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
+  opacity: 1;
+}
+
 .journey {
   color: white;
   font-weight: 300;
@@ -665,6 +675,11 @@ footer {
     opacity: 100%;
     transition: all 0.2s ease;
     border-radius: 16px;
+  }
+
+  .designer {
+    font-size: 12px;
+    font-weight: 200;
   }
 
   .creativity {
