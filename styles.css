@@ -82,7 +82,7 @@ main {
   white-space: nowrap;
   color: #323232;
   font-size: 24px;
-  margin-top: 118px;
+  margin-top: 38%;
 }
 
 .hero-border {
@@ -614,7 +614,7 @@ footer {
     white-space: nowrap;
     color: #323232;
     font-size: 12px;
-    margin-top: 0px;
+    margin-top: 30%;
   }
 
   .hero-border {

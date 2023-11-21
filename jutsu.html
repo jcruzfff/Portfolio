@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan Cruz UX/UI Designer</title>
+    <link rel="stylesheet" href="jutsu.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,300,500"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-nav-container">
+      <header>
+        <p href="index.html" class="topnav name">jonathan cruz</p>
+      </header>
+      <nav>
+        <div class="nav">
+          <a href="index.html" class="nav-item index home">home</a>
+          <a href="gallery.html" class="nav-item gallery">gallery</a>
+          <a href="contact.html" class="nav-item contact">contact</a>
+        </div>
+      </nav>
+      <header>
+        <p class="topnav location">sf, ca</p>
+      </header>
+    </div>
+    <div class="background"></div>
+    <main>
+      <div class="content">
+        <div class="firstlook">
+          <h1 class="productdesigner"><br />Jutsu.AI</h1>
+          <h2 class="summary">Summary</h2>
+          <p class="bio">
+            Jutsu is a revolutionary sports betting platform that aims to change
+            the game for good by putting the fan first. With a fair fun and
+            unforgettable experience for fans to play free.
+          </p>
+
+          <h2 class="approach">Approach</h2>
+          <p class="born">
+            In designing the UI/UX for Jutsu, I prioritized the fans experience.
+            My approach focused towards incorporating gamification elements to
+            enhance user engagement and create an enjoyable experience. The
+            color palette consisted of bold and energetic hues, such as vibrant
+            blues, fiery oranges, and electric greens, which were strategically
+            chosen to evoke excitement and enthusiasm. The overall visual appeal
+            creates a dynamic atmosphere for users.
+          </p>
+        </div>
+        <div class="image-container">
+          <img class="hero" src="./images/JutsuHero.png" />
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="role">
+        <div class="title">
+          <div class="sidetext">Role</div>
+          UX/UI & Web Design
+        </div>
+
+        <div class="title">
+          <div class="sidetext">Help</div>
+          Figma & MidJourney
+        </div>
+
+        <div class="title">
+          <div class="sidetext">Date</div>
+          Feb 17, 2023
+        </div>
+      </div>
+      <div class="borderbottom"></div>
+
+      <img class="longdash" src="./images/Jutstu longdash.png" alt="jutsu" />
+
+      <img
+        src="./images/jutsu-wordmark.svg"
+        alt="jutsuwordmark"
+        class="oglogo"
+      />
+
+      <div class="description">
+        A groundbreaking platform offering sports enthusiasts the best odds and
+        A groundbreaking platform offering sports enthusiasts the best odds and
+        A groundbreaking platform offering sports enthusiasts the best odds and
+        user experience in a digital stadium. Taken a unique approach to its
+        business model Pickem is transforming sports betting.
+      </div>
+
+      <img
+        class="trustedby"
+        src="./images/jutsu_trustedby.png"
+        alt="trustedby"
+      />
+
+      <img
+        class="frontpage"
+        src="./images/frontpage.png"
+        alt="jutsu-frontpage"
+      />
+
+      <img
+        class="designsystem"
+        src="./images/jutsucolorpalette.png"
+        alt="designsystem"
+      />
+
+      <div class="assets">
+        <div class="jutsu-moto">
+          <div class="moto">
+            <div class="jutsuJ">
+              <img id="j" src="./images/jutsuj.svg" alt="jutsuj" />
+              <p class="pj">Build<br />Collab<br />Deploy<br />Monetize</p>
+            </div>
+
+            <div class="component-description">
+              A groundbreaking platform offering sports enthusiasts the best
+              odds and user experience in a digital stadium. Taken a unique
+              approach to its business model Pickem is transforming sports
+              betting with their platform that is designed to leverage
+              breakthroughs in blockchain technology, and ultimately challenge
+              traditional gambling businesses. Pickem embraces value without
+              limits, making their platform the preferred choice for sports
+              bettors worldwide.
+            </div>
+          </div>
+        </div>
+
+        <div class="component-card">
+          <img
+            class="component"
+            src="./images/Jutsu_deploy_component.svg"
+            alt="jutsu-component"
+          />
+        </div>
+      </div>
+
+      <div>
+        <img
+          class="jutsuninjas"
+          src="./images/jutsuninjas.png"
+          alt="jutsu-ninjas"
+        />
+        <div class="deploy">Deploy Forever!</div>
+      </div>
+    </main>
+    <footer>
+      <img
+        src="./images/jutsufooter.png"
+        alt="jutsufooter"
+        class="jutsufooter"
+      />
+    </footer>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const amPm = hours < 12 ? "AM" : "PM";
+        const hours12 = hours % 12 || 12; // Convert to 12-hour format
+        const timeString = `${hours12}:${minutes}${amPm}`;
+
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      function updateDate() {
+        const now = new Date();
+        const monthNames = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        const month = monthNames[now.getMonth()];
+        const day = now.getDate();
+        const year = now.getFullYear();
+        const dateString = `${month}. ${day}, ${year}`;
+
+        document.getElementById("currentDate").textContent = dateString;
+      }
+
+      // Update the clock and date immediately
+      updateClock();
+      updateDate();
+
+      // Update the clock every minute
+      setInterval(updateClock, 60 * 1000);
+
+      // Highlight the active navigation item
+      const currentPage =
+        window.location.pathname.split("/").pop().split(".")[0] || "index";
+      document
+        .querySelector(`.nav-item.${currentPage}`)
+        .classList.add("active");
+
+      const navWrapper = document.querySelector(".nav-wrapper");
+      const nav = document.querySelector(".nav");
+      const navWrapperTop = navWrapper.offsetTop; // Store the original position of the navWrapper
+
+      window.addEventListener("scroll", () => {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > navWrapperTop) {
+          navWrapper.classList.add("sticky");
+          navWrapper.style.bottom = "auto";
+        } else {
+          navWrapper.classList.remove("sticky");
+          navWrapper.style.bottom = "50px";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,610 @@
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --cod-gray: rgba(8, 8, 8, 1);
+  --cod-gray-2: rgba(9, 9, 9, 1);
+  --blue: rgba(38, 72, 250, 1);
+  --blue-2: rgba(39, 73, 251, 1);
+  --storm-dust: rgba (99, 98, 98, 1);
+  --malibu: rgba(107, 184, 255, 1);
+  --star-dust-2: rgba(156, 156, 156, 1);
+  --star-dust: rgba(159, 159, 159, 1);
+  --white: rgba(255, 255, 255, 1);
+  --font-size-xxxxS: 20px;
+  --font-size-xxxs: 20.5px;
+  --font-size-xxs: 24px;
+  --font-size-xs: 26px;
+  --font-size-s: 32px;
+  --font-size-m: 40px;
+  --font-size-l: 48px;
+  --font-family-poppins: "Poppins";
+}
+
+body {
+  background: black;
+  color: var(--star-dust-2);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: var(--font-family-poppins);
+  position: relative;
+}
+
+main {
+  height: 6100px;
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  font-size: 22px;
+  line-height: 20.8px;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.time {
+  width: 185px;
+  margin: auto;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.productdesigner {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  text-align: center;
+  justify-content: flex-start;
+  color: white;
+  z-index: 1;
+  top: 0px;
+}
+
+img {
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+  bottom: 46px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
+  object-fit: cover;
+  position: relative;
+  text-align: right;
+}
+
+.hero {
+  width: 125%;
+  height: 722px;
+}
+
+.nav {
+  width: 28.5%;
+  height: 0;
+  margin: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: var(--star-dust-2);
+  justify-content: space-between;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-item {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 20px;
+}
+
+.nav-item.active {
+  color: white;
+  font-weight: 300;
+}
+
+.topnav {
+  font-size: 22px;
+}
+
+.header-nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  height: 100px;
+  width: 80%;
+  z-index: 10;
+  margin-bottom: 0px;
+}
+
+.summary {
+  margin-top: 0px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  color: #ffd37c;
+  width: 80%;
+  position: relative;
+  font-style: normal;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 16px;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 80%;
+  position: relative;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.approach {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  color: #ffd37c;
+  width: 80%;
+  position: relative;
+  font-weight: lighter;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.born {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+  height: auto;
+  width: 80%;
+  position: relative;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.content {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-right: 77px;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.firstlook {
+  flex: 1;
+  margin-top: 82px;
+}
+
+.home {
+  cursor: pointer;
+}
+
+.gallery {
+  color: white;
+  cursor: pointer;
+}
+
+.contact {
+  color: var(--star-dust-2);
+  cursor: pointer;
+}
+
+.border {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 70px;
+  border-top: 1px solid var(--star-dust);
+}
+
+.borderbottom {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 140px;
+  border-top: 1px solid var(--star-dust);
+}
+
+.role {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-style: normal;
+  color: white;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidetext {
+  font-size: 12px;
+  transform: rotate(-90deg);
+  font-weight: 300;
+  color: var(--star-dust-2);
+  border-bottom: 3px solid var(--star-dust-2);
+  margin-right: 12px;
+}
+
+.longdash {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  margin-top: 95px;
+}
+
+.oglogo {
+  display: flex;
+  width: 50%;
+  height: auto;
+  border-radius: 0px;
+  margin-top: 150px;
+  margin-bottom: 90px;
+}
+
+.description {
+  display: flex;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 170px;
+  width: 80%;
+  color: var(--star-dust-2);
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.trustedby {
+  width: 80%;
+  margin-bottom: 180px;
+}
+
+.frontpage {
+  width: 80%;
+  padding-left: 15px;
+  margin-bottom: 180px;
+}
+
+.designsystem {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 180px;
+}
+
+.assets {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 330px;
+}
+
+.jutsu-moto {
+  display: flex;
+  flex-direction: row;
+}
+
+#j {
+  display: flex;
+  flex-direction: column;
+  width: 238px;
+  height: 299px;
+  bottom: -54px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.moto {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  color: white;
+}
+
+.jutsuJ {
+  display: flex;
+  flex-direction: row;
+}
+
+.pj {
+  font-size: 49px;
+}
+
+.component-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.component-card {
+  width: 330px;
+  height: auto;
+}
+
+.jutsuninjas {
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.deploy {
+  text-align: center;
+  font-size: 49px;
+  color: white;
+}
+
+.jutsufooter {
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+}
+
+.background {
+  background: url(./images/JutsuCubes.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  opacity: 90%;
+  margin: auto;
+  position: fixed;
+  z-index: -1;
+}
+
+/* Media query for mobile devices */
+
+@media screen and (max-width: 768px) {
+  .header-nav-container {
+    flex-direction: row;
+    height: auto;
+  }
+  .nav-item,
+  .topnav {
+    font-size: 12px;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 898px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .role {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1197px) {
+  .productdesigner {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .productdesigner {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .productdesigner {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .description {
+    font-size: 14px;
+  }
+  .title2 {
+    font-size: 24px;
+  }
+
+  .metrics-card {
+    width: 382px;
+    height: 176px;
+    border-radius: 5px;
+  }
+
+  .performance-description {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  footer {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  main {
+    height: 3400px;
+  }
+
+  .image-container {
+    text-align: center;
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .productdesigner {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin-bottom: 36px;
+  }
+
+  .hero {
+    width: 100%;
+    height: auto;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .summary,
+  .bio,
+  .approach,
+  .born {
+    width: 100%;
+  }
+
+  .bio,
+  .born {
+    font-size: 14px;
+    font-size: 200;
+    line-height: 24px;
+  }
+
+  .border {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  .borderbottom {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .sidetext {
+    border-bottom: 1px solid var(--star-dust-2);
+    margin-right: 6px;
+    font-size: 9px;
+  }
+
+  .description {
+    width: 100%;
+    height: auto;
+    line-height: 24px;
+    font-size: 14px;
+    font-size: 200;
+    margin-top: 62px;
+    margin-bottom: 62px;
+  }
+
+  .oglogo {
+    width: 60%;
+    margin-top: 62px;
+    margin-bottom: 62px;
+  }
+
+  .header {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .nav {
+    width: 30%;
+  }
+  .top {
+    flex-direction: column;
+  }
+
+  .topnav {
+    font-size: 12px;
+    margin: 0 6px;
+  }
+
+  .title2 {
+    font-size: 18px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin-bottom: 48px;
+  }
+
+  .location {
+    font-size: 0;
+  }
+  .header-nav-container {
+    margin: auto;
+    align-items: center;
+  }
+
+  footer {
+    margin-top: 0;
+    bottom: 0px;
+    font-size: 12px;
+  }
+}
