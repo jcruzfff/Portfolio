@@ -464,7 +464,6 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.13);
   background: rgba(142, 142, 142, 0.02);
   backdrop-filter: blur(114px);
-  margin-top: 48px;
   margin-top: 240px;
 }
 
@@ -519,6 +518,7 @@ img {
 
 .illusions-container {
   justify-content: space-between;
+  margin-top: 200px;
 }
 
 .illusion-images {
@@ -538,7 +538,7 @@ img {
 }
 
 .quote {
-  margin-top: 200px;
+  margin-top: 340px;
   text-align: center;
   font-size: 48px;
   width: 100%;
