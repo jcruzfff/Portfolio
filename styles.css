@@ -112,13 +112,13 @@ main {
 .titles {
   position: absolute;
   width: 100%;
-  top: 100px;
+  top: 10%;
   text-align: right;
-  right: 358px;
+  right: 20%;
 }
 
 .bold-name {
-  font-size: 136px;
+  font-size: 10vw;
   font-weight: 600;
   color: #17181ac4;
   margin-bottom: 0px;
@@ -127,16 +127,15 @@ main {
 .light-name {
   white-space: nowrap;
   color: white;
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: 500;
-  margin-top: -75px;
+  margin-top: -100px;
   margin-bottom: 24px;
 }
 
 .job-title {
   color: var(--star-dust-2);
-  font-size: 24px;
-
+  font-size: 2vw;
   white-space: nowrap;
 }
 
@@ -484,6 +483,14 @@ footer {
 }
 
 /* Media query for mobile devices */
+
+@media (min-width: 990px) {
+  .job-title {
+    color: var(--star-dust-2);
+    font-size: 24px;
+    white-space: nowrap;
+  }
+}
 @media (max-width: 767px) {
   .projects-grid {
     flex-direction: column;
@@ -588,7 +595,7 @@ footer {
   }
 
   .avatar {
-    width: 72px;
+    width: 64px;
     height: auto;
     top: 24px;
     left: 84px;
