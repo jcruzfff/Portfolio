@@ -30,7 +30,7 @@ body {
 }
 
 main {
-  height: 3300px;
+  height: 3000px;
 }
 
 .header {
@@ -241,7 +241,7 @@ main {
   width: 100%;
   background-color: black;
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -260,7 +260,6 @@ main {
   align-items: center;
   color: var(--star-dust-2);
   justify-content: space-between;
-
   transition: all 0.3 ease-in-out;
 }
 
@@ -691,18 +690,6 @@ footer {
   .part-one,
   .part-two {
     font-size: 20px;
-  }
-
-  .mintgolddust,
-  .jutsu,
-  .deepai {
-    color: gray;
-  }
-
-  img.jutsuthumbnail,
-  img.mintgolddustthumbnail,
-  img.deepaithumbnail {
-    opacity: 40%;
   }
 
   .button-gallery {

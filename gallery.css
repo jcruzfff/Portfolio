@@ -213,6 +213,7 @@ span.workspace {
   color: white;
   font-style: normal;
   font-weight: var(--font-size-m);
+  margin-bottom: 24px;
 }
 
 .selectedprojects {
