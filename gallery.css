@@ -539,13 +539,10 @@ footer {
     font-style: normal;
     font-weight: var(--font-size-m);
   }
-  img.jutsuthumbnail,
-  img.mintgolddustthumbnail,
-  img.deepaithumbnail,
+
   img.ponthumbnail,
   img.graphidthumbnail,
   img.sleepnthumbnail,
-  img.chatroomthumbnail,
   img.mejorathumbnail {
     opacity: 40%;
   }
