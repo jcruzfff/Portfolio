@@ -680,7 +680,7 @@ img {
   }
 
   main {
-    height: 3400px;
+    height: 4000px;
   }
 
   .image-container {
@@ -688,6 +688,8 @@ img {
     order: 1;
     width: 100%;
     height: auto;
+    margin-top: 104px;
+    margin-bottom: -42px;
   }
 
   .productdesigner {
@@ -700,7 +702,6 @@ img {
   .hero {
     width: 100%;
     height: auto;
-
     margin-top: 0px;
     margin-bottom: 0px;
     align-items: center;
@@ -722,6 +723,54 @@ img {
   .border {
     margin-top: 100px;
     margin-bottom: 40px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 104px;
+    margin-bottom: 104px;
+  }
+
+  .card-component {
+    transform: scale(0.8);
+    width: 100%;
+  }
+
+  .description-title,
+  .description-title2 {
+    font-size: 24px;
+    margin-left: 0px;
+  }
+
+  .description-title,
+  .description,
+  .description-title2 {
+    text-align: center;
+  }
+
+  .image-editor-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 84px;
+  }
+
+  .description-title2 {
+    position: relative;
+    order: 2;
+  }
+
+  .image-editor {
+    width: 100%;
+    order: 2;
+    margin-bottom: 104px;
+  }
+
+  .editor-images {
+    width: 100%;
+    height: auto;
   }
 
   .borderbottom {
@@ -748,45 +797,58 @@ img {
     line-height: 24px;
     font-size: 14px;
     font-size: 200;
-    margin-top: 62px;
-    margin-bottom: 62px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   .oglogo {
-    width: 60%;
+    width: 80%;
     margin-top: 62px;
     margin-bottom: 62px;
   }
 
-  .lightpaper {
+  .illusions-container {
     width: 100%;
-    margin-top: 62px;
-    margin-bottom: 62px;
+    height: 640px;
+    margin-top: 0px;
+    margin-bottom: 92px;
   }
 
-  .assets {
+  .illusion-images {
+    position: absolute;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    gap: 12px;
+    bottom: 60px;
   }
 
-  .betting {
-    width: 100%;
+  .illusion1 {
+    width: 310px;
     height: auto;
-    margin: auto;
-    line-height: 24px;
-    font-size: 14px;
-    font-size: 200;
-    margin-top: 12px;
-    margin-bottom: 0px;
-    text-align: center;
+    justify-content: space-around;
+  }
+
+  .illusion2 {
+    display: none;
   }
 
   .header {
     font-size: 12px;
     line-height: 24px;
+  }
+
+  .quote {
+    font-size: 24px;
+    margin-top: 24px;
+    margin: auto;
+    width: 100%;
+    margin-top: 48px;
+  }
+
+  .background-color {
+    height: 30px;
+    width: 340px;
+    bottom: 32px;
   }
 
   .nav {
@@ -821,19 +883,6 @@ img {
     order: 2;
     text-align: center;
     margin: auto;
-  }
-  .dash-card {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-top: 48px;
-    margin-bottom: 0px;
-  }
-  .betscreen {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    margin-right: 0px;
   }
 
   footer {
