@@ -453,6 +453,46 @@ footer {
     font-size: 12px;
     padding: 20px 0;
   }
+
+  .productdesigner {
+    width: 100%;
+    align-items: center;
+  }
+
+  .logos {
+    width: 70%;
+    height: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .curation {
+    margin-bottom: 64px;
+  }
+
+  .mobile {
+    max-width: 352px;
+    gap: 8px;
+    margin-top: 48px;
+  }
+
+  #screens {
+    max-width: 30%;
+  }
+
+  .description {
+    margin-bottom: 48px;
+  }
+
+  .landing {
+    width: 100%;
+    height: auto;
+    margin-top: 48px;
+  }
+
+  main {
+    height: 3200px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -460,6 +500,10 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: auto;
+  }
+
+  .image-container {
+    margin-top: 48px;
   }
 
   .summary,

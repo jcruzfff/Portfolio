@@ -491,36 +491,45 @@ img {
   }
 
   main {
-    height: 3400px;
+    height: 3300px;
   }
 
-  .image-container {
-    text-align: center;
-    order: 1;
-    width: 100%;
-    height: auto;
+  .content {
+    padding-right: 0px;
   }
 
   .productdesigner {
+    width: 100%;
     margin: auto;
     align-items: center;
     display: flex;
     margin-bottom: 36px;
+    margin-top: -24px;
+  }
+
+  .image-container {
+    order: 1;
   }
 
   .hero {
     width: 100%;
     height: auto;
-
-    margin-top: 0px;
+    margin: auto;
+    margin-top: 64px;
     margin-bottom: 0px;
-    align-items: center;
   }
+
+  .firstlook {
+    order: 2;
+    margin-top: 0px;
+  }
+
   .summary,
   .bio,
   .approach,
   .born {
     width: 100%;
+    text-align: center;
   }
 
   .bio,
@@ -547,6 +556,12 @@ img {
     line-height: 18px;
   }
 
+  .oglogo {
+    width: 80%;
+    margin-top: 84px;
+    margin-bottom: 12px;
+  }
+
   .sidetext {
     border-bottom: 1px solid var(--star-dust-2);
     margin-right: 6px;
@@ -559,19 +574,69 @@ img {
     line-height: 24px;
     font-size: 14px;
     font-size: 200;
-    margin-top: 62px;
+    margin-top: 24px;
     margin-bottom: 62px;
   }
 
-  .oglogo {
-    width: 60%;
-    margin-top: 62px;
-    margin-bottom: 62px;
+  .trustedby {
+    margin-top: 120px;
+    margin-bottom: 84px;
   }
 
-  .header {
-    font-size: 12px;
-    line-height: 24px;
+  .designsystem {
+    margin-top: 84px;
+    margin-bottom: 24px;
+  }
+
+  .assets {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    margin-top: 48px;
+  }
+  .frontpage {
+    margin-bottom: 24px;
+  }
+
+  .jutsu-moto {
+    width: 100%;
+  }
+
+  #j {
+    width: 140px;
+    height: auto;
+    margin-left: 24px;
+    margin-bottom: 84px;
+    margin-right: 24px;
+  }
+
+  .component-description {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 48px;
+    font-size: 14px;
+    font-size: 200;
+    color: var(--star-dust-2);
+  }
+
+  .pj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 28px;
+    margin-left: 0px;
+  }
+
+  .jutsuninjas {
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+
+  .deploy {
+    margin-top: 24px;
+    font-size: 24px;
+    margin-bottom: 48px;
   }
 
   .nav {
@@ -584,14 +649,6 @@ img {
   .topnav {
     font-size: 12px;
     margin: 0 6px;
-  }
-
-  .title2 {
-    font-size: 18px;
-    margin: auto;
-    align-items: center;
-    display: flex;
-    margin-bottom: 48px;
   }
 
   .location {
