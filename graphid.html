@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan Cruz UX/UI Designer</title>
+    <link rel="stylesheet" href="./graphid.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,300,500"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-nav-container">
+      <header>
+        <p href="index.html" class="topnav name">jonathan cruz</p>
+      </header>
+      <nav>
+        <div class="nav">
+          <a href="index.html" class="nav-item index home">home</a>
+          <a href="gallery.html" class="nav-item gallery">gallery</a>
+          <a href="contact.html" class="nav-item contact">contact</a>
+        </div>
+      </nav>
+      <header>
+        <p class="topnav location">sf, ca</p>
+      </header>
+    </div>
+    <div class="background"></div>
+    <main>
+      <div class="content">
+        <div class="firstlook">
+          <h1 class="productdesigner"><br />GraphID</h1>
+          <h2 class="summary">Summary</h2>
+          <p class="bio">
+            GraphID offers interactive games for the modern workplace. Creating
+            a culture of inclusion and belonging that improves businesses bottom
+            line!
+          </p>
+
+          <h2 class="approach">Approach</h2>
+          <p class="born">
+            In the redesign of SoftServe, my focus was to strengthen its crucial
+            role in workplace solutions. This involved a thorough evaluation of
+            SoftServe's existing offerings. A notable shift for SoftServe's
+            website was transitioning to a more modern approach. The identity
+            underwent a revamp to mirror our commitment in creating inclusive
+            and diverse work cultures. Ultimately, this redesign positioned
+            SoftServe as a leader in fostering diversity, equity and inclusion,
+            resulting in an product offering that resonates globally.
+          </p>
+        </div>
+        <div class="image-container">
+          <img
+            class="graphid-hero"
+            src="./images/graphid-hero.png"
+            alt="graphid"
+          />
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="role">
+        <div class="title">
+          <div class="sidetext">Role</div>
+          Web Design
+        </div>
+
+        <div class="title">
+          <div class="sidetext">Help</div>
+          Figma
+        </div>
+
+        <div class="title">
+          <div class="sidetext">Date</div>
+          May 2, 2023
+        </div>
+      </div>
+      <div class="borderbottom"></div>
+
+      <img
+        class="longdash"
+        src="./images/Graph ID longDash.png"
+        alt="graphid-LongDash"
+      />
+
+      <div class="graphid-logo">
+        <img class="logo" src="./images/graphid-logo.svg" alt="graphid-logo" />
+      </div>
+
+      <div class="description">
+        SF Pro Display features a clean and modern design with balanced
+        proportions, making it ideal for user interfaces. Its extensive range of
+        weights and styles allows for flexible typography that can adapt to
+        different design needs, from headlines to body text
+      </div>
+      <img
+        class="frontpage"
+        src="./images/graphid-showcase.png"
+        alt="graphid-frontpage"
+      />
+      <div class="design">
+        <img
+          class="graphid-component"
+          src="./images/graphid-component.svg"
+          alt="graphid-component"
+        />
+      </div>
+      <div class="social-section">
+        <div>Social Graph</div>
+        <img class="socials" src="./images/graphid-socials.svg" alt="culture" />
+        <div class="socials-description">
+          SF Pro Display features a clean and modern design with balanced
+          proportions, making it ideal for user interfaces. Its extensive range
+          of weights and styles allows for flexible typography that can adapt to
+          different design needs, from headlines to body text
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="made">vs</p>
+      <p class="date" id="currentDate"></p>
+      <p class="colors"></p>
+    </footer>
+
+    <script>
+      function updateClock() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const amPm = hours < 12 ? "AM" : "PM";
+        const hours12 = hours % 12 || 12; // Convert to 12-hour format
+        const timeString = `${hours12}:${minutes}${amPm}`;
+
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      function updateDate() {
+        const now = new Date();
+        const monthNames = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        const month = monthNames[now.getMonth()];
+        const day = now.getDate();
+        const year = now.getFullYear();
+        const dateString = `${month}. ${day}, ${year}`;
+
+        document.getElementById("currentDate").textContent = dateString;
+      }
+
+      updateDate();
+
+      // Update the clock every minute
+      setInterval(updateClock, 60 * 1000);
+
+      // Highlight the active navigation item
+      const currentPage =
+        window.location.pathname.split("/").pop().split(".")[0] || "index";
+      document
+        .querySelector(`.nav-item.${currentPage}`)
+        .classList.add("active");
+    </script>
+  </body>
+</html>
